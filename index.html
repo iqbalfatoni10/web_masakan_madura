@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Resep Masakan Madura</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#masakan">Masakan</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <div class="home" id="home">
+      <h1 id="typing">Rasakan Kelezatan Sejati Madura</h1>
+    </div>
+    <div id="masakan" class="gallery">
+      <h2>Masakan</h2>
+      <div class="filter-buttons">
+        <button data-filter="all">All</button>
+        <button data-filter="foods">Foods</button>
+        <button data-filter="drinks">Drinks</button>
+        <button data-filter="desserts">Desserts</button>
+      </div>
+      <div class="menu">
+        <div class="images-card" data-name="m-1" id="foods">
+          <img src="img/sate.jpeg" alt="Food" class="foods" />
+          <div class="menu-title">Sate</div>
+        </div>
+        <div class="images-card" data-name="m-2" id="foods">
+          <img src="img/bebek.webp" alt="Food" class="foods" />
+          <div class="menu-title">Bebek Bumbu Hitam</div>
+        </div>
+        <div class="images-card" data-name="m-3" id="foods">
+          <img src="img/kaldukokot.jpg" alt="Food" class="foods" />
+          <div class="menu-title">Kaldu Kokot</div>
+        </div>
+        <div class="images-card" data-name="m-4" id="foods">
+          <img src="img/cake.webp" alt="Food" class="foods" />
+          <div class="menu-title">Cake</div>
+        </div>
+        <div class="images-card" data-name="m-5" id="desserts">
+          <img src="img/podeng.webp" alt="Dessert" class="desserts" />
+          <div class="menu-title">Podeng</div>
+        </div>
+        <div class="images-card" data-name="m-6" id="desserts">
+          <img src="img/gettas.jpg" alt="Dessert" class="desserts" />
+          <div class="menu-title">Gettas</div>
+        </div>
+        <div class="images-card" data-name="m-7" id="desserts">
+          <img src="img/pattola.jpg" alt="Dessert" class="desserts" />
+          <div class="menu-title">Pattola</div>
+        </div>
+        <div class="images-card" data-name="m-8" id="desserts">
+          <img src="img/cenil.jpeg" alt="Dessert" class="desserts" />
+          <div class="menu-title">Cenil</div>
+        </div>
+        <div class="images-card" data-name="m-9" id="drinks">
+          <img src="img/pokak.webp" alt="Drink" class="drinks" />
+          <div class="menu-title">Pokak</div>
+        </div>
+        <div class="images-card" data-name="m-10" id="drinks">
+          <img src="img/es-lembur.jpg" alt="Drink" class="drinks" />
+          <div class="menu-title">Es Lembur</div>
+        </div>
+        <div class="images-card" data-name="m-11" id="drinks">
+          <img src="img/sarikoyo.jpg" alt="Drink" class="drinks" />
+          <div class="menu-title">Sarikoyo</div>
+        </div>
+        <div class="images-card" data-name="m-12" id="drinks">
+          <img src="img/sudimampir.jpg" alt="Drink" class="drinks" />
+          <div class="menu-title">Es Sudi Mampir</div>
+        </div>
+      </div>
+    </div>
+
+  <div class="detail-makanan">
+    <div class="preview" data-target="m-1">
+      <i class="fas fa-times"></i>
+      <img src="img/sate.jpeg" alt="">
+      <h3>Sate</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi consectetur commodi mollitia est! Temporibus?</p>
+    </div>
+
+    <div class="preview" data-target="m-2">
+      <i class="fas fa-times"></i>
+      <img src="img/bebek.webp" alt="">
+      <h3>Bebek Bumbu Hitam</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi consectetur commodi mollitia est! Temporibus?</p>
+    </div>
+
+    <div class="preview" data-target="m-3">
+      <i class="fas fa-times"></i>
+      <img src="img/kaldukokot.jpg" alt="">
+      <h3>Kaldu Kokot</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi consectetur commodi mollitia est! Temporibus?</p>
+    </div>
+
+    <div class="preview" data-target="m-4">
+      <i class="fas fa-times"></i>
+      <img src="img/cake.webp" alt="">
+      <h3>Cake</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi consectetur commodi mollitia est! Temporibus?</p>
+    </div>
+
+    <div class="preview" data-target="m-5">
+      <i class="fas fa-times"></i>
+      <img src="img/podeng.webp" alt="">
+      <h3>Podeng</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi consectetur commodi mollitia est! Temporibus?</p>
+    </div>
+
+    <div class="preview" data-target="m-6">
+      <i class="fas fa-times"></i>
+      <img src="img/gettas.jpg" alt="">
+      <h3>Gettas</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi consectetur commodi mollitia est! Temporibus?</p>
+    </div>
+
+    <div class="preview" data-target="m-7">
+      <i class="fas fa-times"></i>
+      <img src="img/pattola.jpg" alt="">
+      <h3>Pattola</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi consectetur commodi mollitia est! Temporibus?</p>
+    </div>
+
+    <div class="preview" data-target="m-8">
+      <i class="fas fa-times"></i>
+      <img src="img/cenil.jpeg" alt="">
+      <h3>Cenil</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi consectetur commodi mollitia est! Temporibus?</p>
+    </div>
+
+    <div class="preview" data-target="m-9">
+      <i class="fas fa-times"></i>
+      <img src="img/pokak.webp" alt="">
+      <h3>Pokak</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi consectetur commodi mollitia est! Temporibus?</p>
+    </div>
+
+    <div class="preview" data-target="m-10">
+      <i class="fas fa-times"></i>
+      <img src="img/es-lembur.jpg" alt="">
+      <h3>Es Lembur</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi consectetur commodi mollitia est! Temporibus?</p>
+    </div>
+
+    <div class="preview" data-target="m-11">
+      <i class="fas fa-times"></i>
+      <img src="img/sarikoyo.jpg" alt="">
+      <h3>Sarikoyo</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi consectetur commodi mollitia est! Temporibus?</p>
+    </div>
+
+    <div class="preview" data-target="m-12">
+      <i class="fas fa-times"></i>
+      <img src="img/sudimampir.jpg" alt="">
+      <h3>Es Sudi Mampir</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In modi consectetur commodi mollitia est! Temporibus?</p>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  </body>
+</html>
